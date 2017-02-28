@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "Hacker News fix",
+  "description": "Move toggle to hte left on Hacker News",
+  "version": "0.1",
+  "permissions": [
+    "https://news.ycombinator.com/item*"
+  ],
+  "content_scripts":[
+    {
+      "matches": ["https://news.ycombinator.com/item*"],
+      "js":["jquery.min.js", "script.js"]
+    }
+  ]
+}
